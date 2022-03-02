@@ -1,0 +1,7 @@
+<div *ngIf="details">
+    <h5>{{details?.strDrink}}</h5>
+    <img [src]="imageUrl" alt="Cocktail Image">
+    <ul>
+        <li *ngFor="let col of cols"> {{col}}: {{details[col]}}</li>
+    </ul>
+</div>
