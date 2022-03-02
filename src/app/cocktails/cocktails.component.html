@@ -1,0 +1,21 @@
+<div>
+    <table>
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Ingredients</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let cocktail of cocktails">
+                <td>
+                    {{cocktail.strDrink}}
+                </td>
+                <td>
+                    {{ getIngredientsList(cocktail)}}
+                </td>
+                <td><a (click)="navigate(cocktail)">Get Details</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
